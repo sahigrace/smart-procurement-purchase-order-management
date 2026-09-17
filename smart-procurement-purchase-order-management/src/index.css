@@ -1,0 +1,306 @@
+/* =========================================
+   SMART PROCUREMENT
+   GLOBAL STYLES
+   ========================================= */
+
+:root {
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    color: #172033;
+    background: #f5f7fb;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================
+   RESET
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    background: #f5f7fb;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+/* =========================================
+   ROOT
+   ========================================= */
+
+#root {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* =========================================
+   MAIN APPLICATION LAYOUT
+   ========================================= */
+
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background: #f5f7fb;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 32px;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   PAGE HEADER
+   ========================================= */
+
+.page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.page-header h1 {
+    margin: 0;
+    color: #172033;
+    font-size: 30px;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.page-header p {
+    margin: 7px 0 0;
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =========================================
+   COMMON CARD
+   ========================================= */
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.03);
+}
+
+/* =========================================
+   COMMON BUTTONS
+   ========================================= */
+
+.primary-btn {
+    border: 1px solid #2563eb;
+    border-radius: 8px;
+    padding: 11px 18px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.1s ease;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.primary-btn:active {
+    transform: translateY(1px);
+}
+
+.secondary-btn {
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    padding: 11px 18px;
+    background: #ffffff;
+    color: #344054;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.secondary-btn:hover {
+    background: #f8fafc;
+}
+
+.danger-btn {
+    border: 1px solid #dc2626;
+    border-radius: 8px;
+    padding: 11px 18px;
+    background: #dc2626;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.danger-btn:hover {
+    background: #b91c1c;
+}
+
+/* =========================================
+   FORM ELEMENTS
+   ========================================= */
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================================
+   STATUS BADGES
+   ========================================= */
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* =========================================
+   LOADING
+   ========================================= */
+
+.loading-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f7fb;
+    color: #667085;
+    font-size: 15px;
+}
+
+/* =========================================
+   ERROR
+   ========================================= */
+
+.error-message {
+    padding: 14px 16px;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-size: 14px;
+}
+
+/* =========================================
+   SCROLLBAR
+   ========================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* =========================================
+   TEXT SELECTION
+   ========================================= */
+
+::selection {
+    background: rgba(37, 99, 235, 0.16);
+    color: #172033;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .main-content {
+        padding: 24px;
+    }
+
+    .page-header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .main-content {
+        padding: 20px 16px;
+    }
+
+    .page-header h1 {
+        font-size: 26px;
+    }
+}

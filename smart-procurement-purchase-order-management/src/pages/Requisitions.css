@@ -1,0 +1,98 @@
+.requisition-table-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.requisition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.requisition-table th {
+    background: #f3f4f6;
+    padding: 14px;
+    text-align: left;
+    color: #374151;
+    font-size: 13px;
+}
+
+.requisition-table td {
+    padding: 14px;
+    border-top: 1px solid #e5e7eb;
+    color: #4b5563;
+    font-size: 13px;
+}
+
+.requisition-table tr:hover {
+    background: #f9fafb;
+}
+
+.primary-button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+.view-button {
+    background: #374151;
+    color: white;
+    border: none;
+    padding: 7px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-button:hover {
+    background: #111827;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.status-approved {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.status-draft {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.status-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.no-data {
+    text-align: center;
+    padding: 40px !important;
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}

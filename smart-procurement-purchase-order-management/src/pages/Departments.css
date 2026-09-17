@@ -1,0 +1,309 @@
+.departments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.departments-header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #172033;
+}
+
+.departments-header p {
+    margin-top: 8px;
+    color: #667085;
+    font-size: 15px;
+}
+
+.add-department-btn {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-department-btn:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.department-error {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+    padding: 15px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.departments-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.department-table-wrapper {
+    overflow-x: auto;
+}
+
+.department-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.department-table th {
+    background: #f8fafc;
+    color: #475467;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.department-table td {
+    padding: 17px 20px;
+    border-bottom: 1px solid #edf0f4;
+    color: #344054;
+    font-size: 14px;
+}
+
+.department-table tbody tr:hover {
+    background: #fafbfc;
+}
+
+.department-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.department-table td strong {
+    color: #172033;
+    font-size: 14px;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.department-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-department-btn,
+.delete-department-btn {
+    border: none;
+    padding: 8px 13px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.edit-department-btn {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.edit-department-btn:hover {
+    background: #dbeafe;
+}
+
+.delete-department-btn {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.delete-department-btn:hover {
+    background: #fee2e2;
+}
+
+/* =========================
+   LOADING / EMPTY
+========================= */
+
+.department-loading,
+.department-empty {
+    padding: 60px;
+    text-align: center;
+    color: #667085;
+    font-size: 15px;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.department-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.department-modal {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.department-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px 26px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.department-modal-header h2 {
+    margin: 0;
+    color: #172033;
+    font-size: 22px;
+}
+
+.department-modal-header p {
+    margin: 7px 0 0;
+    color: #667085;
+    font-size: 14px;
+}
+
+.department-close-btn {
+    border: none;
+    background: transparent;
+    color: #667085;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.department-close-btn:hover {
+    color: #111827;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.department-form {
+    padding: 26px;
+}
+
+.department-form label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 18px;
+    color: #344054;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.department-form label:first-child {
+    margin-top: 0;
+}
+
+.department-form input,
+.department-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    background: white;
+    color: #172033;
+    font-size: 14px;
+    outline: none;
+}
+
+.department-form input::placeholder {
+    color: #98a2b3;
+}
+
+.department-form input:focus,
+.department-form select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================
+   MODAL BUTTONS
+========================= */
+
+.department-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.department-cancel-btn,
+.department-save-btn {
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.department-cancel-btn {
+    background: white;
+    border: 1px solid #d0d5dd;
+    color: #344054;
+}
+
+.department-cancel-btn:hover {
+    background: #f8fafc;
+}
+
+.department-save-btn {
+    background: #2563eb;
+    border: 1px solid #2563eb;
+    color: white;
+}
+
+.department-save-btn:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .departments-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .departments-header h1 {
+        font-size: 27px;
+    }
+
+    .department-table th,
+    .department-table td {
+        white-space: nowrap;
+    }
+}

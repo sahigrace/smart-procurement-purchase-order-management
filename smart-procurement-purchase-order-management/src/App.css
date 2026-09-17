@@ -1,0 +1,218 @@
+/* =========================================
+   SMART PROCUREMENT
+   APP LEVEL STYLES
+   ========================================= */
+
+/* Prevent unwanted horizontal scrolling */
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* Main application wrapper */
+.app-layout {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Main content area */
+.main-content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* =========================================
+   COMMON PAGE SECTION
+   ========================================= */
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    margin: 0;
+    color: #172033;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.section-title p {
+    margin: 6px 0 0;
+    color: #667085;
+    font-size: 14px;
+}
+
+/* =========================================
+   COMMON TABLE CONTAINER
+   ========================================= */
+
+.table-container {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow-x: auto;
+}
+
+/* =========================================
+   COMMON TABLE
+   ========================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #f8fafc;
+    color: #475467;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    padding: 15px 18px;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+table td {
+    padding: 15px 18px;
+    color: #344054;
+    font-size: 14px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+table tbody tr:hover {
+    background: #fafbfc;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================================
+   COMMON MODAL
+   ========================================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15, 23, 42, 0.55);
+}
+
+.modal {
+    width: 100%;
+    max-width: 520px;
+
+    background: #ffffff;
+    border-radius: 14px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.18);
+
+    overflow: hidden;
+}
+
+/* =========================================
+   COMMON EMPTY STATE
+   ========================================= */
+
+.empty-state {
+    padding: 60px 20px;
+    text-align: center;
+    color: #667085;
+}
+
+.empty-state h3 {
+    margin: 0 0 8px;
+    color: #344054;
+    font-size: 18px;
+}
+
+.empty-state p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =========================================
+   COMMON LOADING STATE
+   ========================================= */
+
+.page-loading {
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #667085;
+    font-size: 15px;
+}
+
+/* =========================================
+   COMMON ERROR STATE
+   ========================================= */
+
+.page-error {
+    padding: 14px 18px;
+
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+
+    background: #fef2f2;
+    color: #b91c1c;
+
+    font-size: 14px;
+}
+
+/* =========================================
+   FOCUS ACCESSIBILITY
+   ========================================= */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .section-title h2 {
+        font-size: 20px;
+    }
+
+    table th,
+    table td {
+        padding: 13px 15px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .section-title h2 {
+        font-size: 19px;
+    }
+
+    table th,
+    table td {
+        font-size: 13px;
+    }
+
+    .modal-overlay {
+        padding: 12px;
+    }
+}

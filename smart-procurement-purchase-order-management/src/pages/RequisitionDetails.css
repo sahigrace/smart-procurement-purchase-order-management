@@ -1,0 +1,278 @@
+.details-card,
+.workflow-card,
+.action-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.details-header h2 {
+    margin: 0 0 12px;
+    color: #1f2937;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 15px;
+    background: #f9fafb;
+    border-radius: 7px;
+}
+
+.detail-label {
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.detail-value {
+    font-size: 14px;
+    color: #111827;
+    font-weight: 500;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-approved {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.status-draft {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.status-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.workflow-card h2,
+.action-card h2 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+.workflow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.workflow-step {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    color: #9ca3af;
+}
+
+.workflow-step::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 38px;
+    width: calc(100% - 28px);
+    height: 2px;
+    background: #e5e7eb;
+}
+
+.workflow-step:last-child::after {
+    display: none;
+}
+
+.workflow-step.active {
+    color: #2563eb;
+}
+
+.workflow-step.completed {
+    color: #16a34a;
+}
+
+.workflow-step.active .step-number {
+    background: #2563eb;
+    color: white;
+}
+
+.workflow-step.completed .step-number {
+    background: #16a34a;
+    color: white;
+}
+
+.step-number {
+    min-width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #e5e7eb;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.workflow-step div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.workflow-step strong {
+    font-size: 13px;
+}
+
+.workflow-step span {
+    font-size: 11px;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.approve-button,
+.reject-button,
+.secondary-button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary-button {
+    background: #2563eb;
+    color: white;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+.approve-button {
+    background: #16a34a;
+    color: white;
+}
+
+.approve-button:hover {
+    background: #15803d;
+}
+
+.reject-button {
+    background: #dc2626;
+    color: white;
+}
+
+.reject-button:hover {
+    background: #b91c1c;
+}
+
+.secondary-button {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.secondary-button:hover {
+    background: #d1d5db;
+}
+
+.primary-button:disabled,
+.approve-button:disabled,
+.reject-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    background: #dcfce7;
+    color: #166534;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.approved-message {
+    background: #dcfce7;
+    color: #166534;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.rejected-message {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.dashboard-loading {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow {
+        flex-direction: column;
+    }
+
+    .workflow-step {
+        width: 100%;
+    }
+
+    .workflow-step::after {
+        display: none;
+    }
+}

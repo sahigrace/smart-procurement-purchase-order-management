@@ -1,0 +1,32 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Maven
+target/
+*.class
+
+# Node / React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# React / Vite build
+dist/
+build/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
